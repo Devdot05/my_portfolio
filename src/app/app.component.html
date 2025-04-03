@@ -1,0 +1,57 @@
+<main>
+  <nav class="navbar bg-black navbar-expand-sm fixed-top text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/images/my-logo-removebg-preview.png" alt="" width="50px">
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end w-50 rounded-2 bg-black text-white text-center" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-white bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="navbarNav">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#work">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#resume">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+    <div class="bg-black">
+      <div id="home">
+        <app-home></app-home>
+      </div>
+      <div id="about">
+        <app-about></app-about>
+      </div>
+      <div id="work">
+        <app-work></app-work>
+      </div>
+      <div id="resume">
+        <app-resume></app-resume>
+      </div>
+      <div id="contact">
+        <app-contact></app-contact>
+      </div>
+    </div>
+  </section>
+  
+</main>

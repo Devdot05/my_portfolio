@@ -1,0 +1,58 @@
+<section class="container-fluid py-5">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5 text-white mt-5">
+            <div>
+                <h1>Contact Me</h1>
+            </div>
+            <div class="contact">
+                <div class="d-flex gap-3">
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                    <p>olawole85dotun&#64;gmail.com</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <span><i class="fa-solid fa-square-phone"></i></span>
+                    <p>07044056828</p>
+                </div>
+            </div>
+            <div class="message">
+                <a href="https://wa.me/08130649439" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" class="facebook"><span><i class="fa-brands fa-facebook"></i></span></a>
+                <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="col-6 col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5 mt-5" >
+            <div class="bg-success text-center mx-auto mb-3 messageMe" data-aos="fade-right">
+                <img src="/images/remessage.png" alt="" width="80px">
+            </div>
+            <div class="text-center text-white">
+                <h1>Let Collaborate</h1>
+            </div>
+
+            <form action="" [formGroup]="userForm" (submit)="contactMe()">
+                <div>
+                    <input type="text" name="" placeholder="Your name" class="shadow-none border border-secondary outline-none" formControlName="full_name">
+                    <span *ngIf="userForm.get('full_name')?.errors?.['required'] && userForm.get('full_name')?.touched" class="text-danger">full name is required</span>
+                </div>
+                <div class="my-4">
+                    <input type="text" name="" placeholder="Your email" class="shadow-none border border-secondary" formControlName="email">
+                    <span *ngIf="userForm.get('email')?.errors?.['required'] && userForm.get('email')?.touched" class="text-danger">full name is required</span>
+                    <span *ngIf="userForm.get('email')?.errors?.['email'] && userForm.get('email')?.touched" class="text-danger">It must be a valid email</span>
+                </div>
+                <div>
+                    <textarea name="" id="" placeholder="Your message" class="shadow-none border border-secondary" formControlName="message"></textarea>
+                    <span *ngIf="userForm.get('message')?.errors?.['required'] && userForm.get('message')?.touched" class="text-danger">full name is required</span>
+                </div>
+                <div>
+                    <button class="btn btn-success w-100 mt-3" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="text-white copyright py-1 text-center">
+    <p class="pt-3">copyright &copy; codithy. My personal website</p>
+</div>
+
+<!---core features-->

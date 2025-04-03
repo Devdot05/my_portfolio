@@ -1,0 +1,82 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+::placeholder{
+    color: rgb(254, 254, 254);
+}
+
+input, textarea{
+    background-color: rgb(37, 37, 37);
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+}
+
+ 
+
+.contact span{
+    display: inline-block;
+    color: red;
+    font-size: 20px;
+}
+
+.message{
+    font-size: 40px;
+    gap: 15px;
+    display: block;
+}
+
+.message a{
+    display: block;
+}
+
+.message i{
+    color: #ababab;
+    transition: transform 0.5s;
+}
+
+.message i:hover{
+    color: #ff004F;
+    transform: translateY(-5px);
+}
+
+.message .whatsapp{
+    color: rgb(8, 211, 8);
+}
+
+.message .facebook{
+    color: rgb(29, 126, 231);
+}
+
+.messageMe{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+
+.copyright{
+    background-color: rgb(52, 52, 52);
+}
+
+p{
+    color: gainsboro;
+}
+
+
+@media (max-width: 768px) {
+    .message{
+        font-size: 40px;
+        gap: 15px;
+        display: inline-block;
+        display: flex;
+        padding-bottom: 20px;
+    }
+}

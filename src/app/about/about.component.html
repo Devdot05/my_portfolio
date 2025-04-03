@@ -1,0 +1,70 @@
+<div class="container-fluid contaner py-5" data-aos="fade-right">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-center" data-aos="fade-right"
+            data-aos-easing="ease-in-sine">
+            <!-- <div class="text-center bg-img ms-5">
+            </div> -->
+            <img src="/images/my_pics.png" alt="" class="bg-img">
+        </div>
+        <div class="col-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 text-white" data-aos="fade-left"
+            data-aos-easing="ease-in-sine">
+            <div class="content text-center">
+                <h3>About Me</h3>
+                <p>
+                    I have a strong foundation in both frontend and backend development, with a focus on creating scalable architecture. 
+                    I’ve worked on building high-performance web apps using (React, Node.js, Laravel, and various database technologies 
+                    like MongoDB and MySQL). I'm passionate about creating seamless user experiences and solving complex problems 
+                    with elegant, scalable solutions. I’m constantly learning new technologies and improving my skillset to build 
+                    faster, more efficient applications.
+                </p>
+            </div>
+            <div class="row">
+                <div class="tabs">
+                    <div class="tab ms-2" [class.active]="selectedTab === 'skills'" (click)="selectedTab = 'skills'">Skill</div>
+                    <div class="tab  ps-3" [class.active]="selectedTab === 'experience'" (click)="selectedTab = 'experience'">Experience</div>
+                    <div class="tab ps-4" [class.active]="selectedTab === 'education'" (click)="selectedTab = 'education'">Education</div>
+                    <div class="underline" [ngStyle]="{ 'left': getUnderlinePosition() }"></div>
+                </div>
+                <div [ngSwitch]="selectedTab" class="row">
+                    <!-- <div  > -->
+                        <ul *ngSwitchCase="'skills'" class="pt-3 ms-4 text-white col-10 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
+                            <li><span>Structural & Programming Language</span><br>HTML | CSS | JAVASCRIPT | PHP</li>
+                            <li><span>JAVASCRIPT Framework</span><br> React.js | Angular.js | Vue.js</li>
+                            <li><span>PHP Framework & Server Side</span><br> Laravel | Node.js | Express.js</li>
+                            <li><span>CSS Framework</span><br> Bootstrap | Tailwind CSS</li>
+                            <li><span>Database</span><br> Firebase | MongoDB | MySQL</li>
+                        </ul>
+                    <!-- </div> -->
+                  
+                    <!-- <div *ngSwitchCase="'experience'" class=""> -->
+                        <ul *ngSwitchCase="'experience'" class="pt-3 ms-4 col-10 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
+                            <li>Developed and maintained scalable web applications using Angular, Node.js, and MongoDB</li>
+                            <li>Implemented responsive UI/UX using HTML, CSS, Tailwind, Bootstrap.</li>
+                            <li>Optimized website performance, reducing load time by 60%.</li>
+                            <li>Integrated RESTful APIs and handled authentication with JWT/OAuth.</li>
+                            <li>Worked with databases like MySQL / PostgreSQL / Firebase for efficient data management.</li>
+                            <li>Collaborated with cross-functional teams to deliver features on time.</li>
+                            <li>Used Git, Docker, CI/CD pipelines for version control and deployment.</li>
+                        </ul>
+                    <!-- </div> -->
+                  
+                    <div *ngSwitchCase="'education'" class="col-10 col-md-7 col-lg-5 col-xl-5 col-xxl-5 ps-3 pt-3">
+                      <h2>SQI College of ICT, Ogbomosho</h2>
+                      <p>I studied at Soft Quest Incorporated (SQI) College of ICT, Ogbomosho, Oyo State, where I gained comprehensive knowledge in software development through frequent tests and hands-on projects. During my time at SQI, I developed strong skills in various technologies, including HTML, CSS, JavaScript, Bootstrap, PHP, Node.js, Angular, React, Vue, Java, Python, Laravel, Android (Java), and version control with Git.</p>
+                      <div>
+                        <h3>Projects & Practical Experience</h3>
+                        <p>Throughout my studies, I worked on several projects that enhanced my problem-solving skills and technical expertise, including:</p>
+                        <ul>
+                            <li>JavaScript: Unit converter, calculator, loan discount evaluator, graphics editing app (Canvas), bar chart generator (Canvas).</li>
+                            <li>Node.js: Notebook application, real-time chat app (MongoDB & Socket.io).</li>
+                            <li>Frontend Frameworks (Vue, React, Angular): To-do app, Windows MP3 player.
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+          
+    </div>
+</div>
