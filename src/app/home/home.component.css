@@ -24,6 +24,7 @@
     top: 120px;
     left: 300px;
     margin: 0 10px;
+    background-color: RED;
 }
 
 
@@ -118,9 +119,9 @@
         font-size: 18px;
     }
 
-    .bg-image .tag{
+    /* .bg-image .tag{
         top: 500px;
-    }
+    } */
 }
 
 @media (max-width:720px){
@@ -180,14 +181,18 @@
         font-size: 25px;
         left: 0px;
         top: 350px;
-        width: 100%;
+        width: 95%;
         padding: 0 2px;
+        /* background-color: red; */
     }
 
     @keyframes typing{
     
+        0%, 100%{
+            width:100;
+        }
         50%{
-            width: 120%;
+            width: 100%;
         }
     }
 }
