@@ -10,8 +10,8 @@ export class MessageService {
     private _http: HttpClient
   ) { }
 
-  //  url = "http://localhost/PHP/Exercise/my_portfolio/index.php"
-  url = ""
+   url = "http://localhost/PHP/Exercise/my_portfolio/index.php"
+  // url = ""
   messageMe (data: any) {
     return this._http.post(`${this.url}`, data, {
     })

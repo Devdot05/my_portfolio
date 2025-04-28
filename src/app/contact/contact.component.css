@@ -18,6 +18,16 @@ input, textarea{
     color: white;
 }
 
+button{
+    background-color: #ff004F;
+    color: white;
+}
+
+button:hover{
+    background-color: #da0649;
+    color: white;
+}
+
  
 
 .contact span{

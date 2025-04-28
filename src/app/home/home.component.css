@@ -1,3 +1,10 @@
+/* .posis{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100vh;
+    top: 50px;
+} */
 .bg-image{
     background-image:linear-gradient(rgba(15, 14, 14, 0.8), rgba(10, 10, 10, 0.8)), url(/images/comp.avif);
     width: 100%;
@@ -19,12 +26,18 @@
     border-radius: 3px solid;
     font-family: monospace;
     font-size: 50px;
-    text-align: center;
+    margin: 0 auto;
+    /* background-color: RED; */
+}
+
+.one{
     position: absolute;
     top: 120px;
     left: 300px;
-    margin: 0 10px;
-    background-color: RED;
+    text-align: center;
+    margin: 0 auto;
+    width: 52%;
+    
 }
 
 
@@ -72,7 +85,7 @@
         width:0;
     }
     50%{
-        width: 49%;
+        width: 100%;
     }
 }
 
@@ -96,15 +109,13 @@
         width: 80%;
     }
 
-    @keyframes typing{
-     
-        50%{
-            width: 78%;
-        }
+    .one{
+        width: 65%;
+        left: 100px;
     }
 }
 
-@media (max-width:880px){
+@media (max-width:940px){
     .bg-image p{
         left: 100px;
         top: 350px;
@@ -114,26 +125,63 @@
 
     .bg-image .tag{
         position: absolute;
-        top: 550px;
+        top: 500px;
+         
        
         font-size: 18px;
     }
 
-    /* .bg-image .tag{
-        top: 500px;
-    } */
+    .one{
+        width: 74%;
+        left: 100px;
+    }
 }
 
-@media (max-width:720px){
-
-    .bg-image h1{
-        left: 50px;
+@media (max-width:830px) {
+    .one{
+        width: 80%;
+        left: 100px;
     }
+}
 
+@media (max-width:800px) {
+    .one{
+        width: 84%;
+        left: 100px;
+    }
+}
+
+@media (max-width:770px) {
+    .one{
+        width: 88%;
+        left: 80px;
+    }
+}
+
+@media (max-width:740px) {
+    .one{
+        width: 92%;
+        left: 40px;
+    }
     .bg-image h2{
          
         left: 30px;
     }
+}
+
+@media (max-width:690px){
+
+    .bg-image h1{
+        left: 40px;
+    }
+
+    .one{
+        width: 95%;
+        left: 10px;
+        font-size: 40px;
+    }
+
+   
 
     .bg-image p{
         left: 100px;
@@ -146,11 +194,11 @@
    
 }
 
-@media (max-width:680px){
+@media (max-width:620px){
 
     .bg-image h1{
         left: 50px;
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .bg-image h2{
@@ -163,13 +211,20 @@
         top: 350px;
         width: 80%;
     }
+
+    .one{
+        width: 95%;
+        left: 10px;
+    }
 }
+
+
 
 @media (max-width:578px){
 
     .bg-image h1{
         left: 0;
-        font-size: 31px;
+        font-size: 40px;
     }
 
     .bg-image h2{
@@ -186,15 +241,59 @@
         /* background-color: red; */
     }
 
-    @keyframes typing{
-    
-        0%, 100%{
-            width:100;
-        }
-        50%{
-            width: 100%;
-        }
+    .one{
+        width: 98%;
+        left: 10px;
     }
+}
+
+@media(max-width:520px) {
+    .bg-image h1{
+        left: 0;
+        font-size: 40px;
+    }
+
+    .one{
+        width:99%;
+        left: 0px;
+    }
+}
+
+@media(max-width:450px) {
+    .bg-image h1{
+        left: 0;
+        font-size: 32px;
+    }
+
+    .one{
+        width:100%;
+    }
+}
+
+@media (max-width:420px) {
+    .bg-image .tag{
+        position: absolute;
+        top: 540px;
+ 
+    }
+
+    .bg-image h2{
+        top: 200px;
+        font-size: 45px;
+    }
+
+    .bg-image h1{
+        font-size: 30px;
+        left: 0;
+    }
+    .one{
+        position: absolute;
+        top: 120px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
 }
 
 /* @media (max-width: 390px) {

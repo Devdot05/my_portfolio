@@ -28,6 +28,7 @@ export class ContactComponent {
     private _message: MessageService
   ) {}
 
+  message = "please fill all the required field"
   contactMe () {
   
     console.log(this.userForm.value);
@@ -37,6 +38,8 @@ export class ContactComponent {
         horizontalPosition: 'center',
         verticalPosition: 'bottom'
       })
+    }else{
+      this._snackBar.open( this.message)
     }
     
     this._message.messageMe(this.userForm.value).subscribe({
