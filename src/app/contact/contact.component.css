@@ -5,7 +5,7 @@
 } */
 
 ::placeholder{
-    color: rgb(254, 254, 254);
+    color: rgb(202, 199, 199);
 }
 
 input, textarea{
@@ -78,6 +78,13 @@ button:hover{
 
 p{
     color: gainsboro;
+}
+
+.fa-chevron-up{
+        color: white;
+}
+.fa-chevron-up:hover{
+    color: #ff004f;
 }
 
 

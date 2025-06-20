@@ -12,8 +12,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    padding:10px;
+    /* position: relative; */
+    padding:100px 0 10px 0px;
     
 }
 
@@ -30,8 +30,8 @@
     /* background-color: RED; */
 }
 
-.one{
-    position: absolute;
+.welcome{
+    /* position: absolute; */
     top: 120px;
     left: 300px;
     text-align: center;
@@ -44,25 +44,24 @@
 .bg-image h2{
     color: rgb(219, 179, 17);
     text-align: center;
-    position: absolute;
-    top: 220px;
-    left: 300px;
+    /* position: absolute; */
+    /* top: 220px;
+    left: 300px; */
     font-size: 50px;
 }
 
 .bg-image p{
     color: rgb(230, 230, 230); 
-    text-align: center;
-    position: absolute;
-    width: 50%;
-    top: 320px;
-    left: 300px;
-    font-size: 27px;
+    /* text-align: center; */
+    /* position: absolute; */
+    /* top: 320px;
+    left: 300px; */
+    font-size: 26px;
 }
 
 .bg-image .tag{
-    position: absolute;
-    top: 490px;
+    /* position: absolute; */
+    /* top: 490px; */
    
     font-size: 18px;
 }
@@ -77,9 +76,15 @@
 
 .btn:hover{
     background: #ff004f;
-    border: 2px solid rgb(9, 33, 213);
+    /* border: 2px solid rgb(9, 33, 213); */
 }
 
+.fa-chevron-down{
+        color: white;
+}
+.fa-chevron-down:hover{
+    color: #ff004f;
+}
 
 @keyframes typing{
     0%, 100%{
@@ -98,69 +103,44 @@
 
 
 @media (max-width:1100px) {
-    .bg-image h1{
-        left: 100px;
-    }
-    .bg-image h2{
-        left: 100px;
-    }
-
-    .bg-image p{
-        left: 100px;
-        width: 80%;
-    }
-
-    .one{
+ 
+    .welcome{
         width: 65%;
         left: 100px;
     }
 }
 
 @media (max-width:940px){
-    .bg-image p{
-        left: 100px;
-        top: 350px;
-        font-size: 25px;
-        width: 80%;
-    }
-
-    .bg-image .tag{
-        position: absolute;
-        top: 500px;
-         
-       
-        font-size: 18px;
-    }
-
-    .one{
+ 
+    .welcome{
         width: 74%;
         left: 100px;
     }
 }
 
 @media (max-width:830px) {
-    .one{
+    .welcome{
         width: 80%;
         left: 100px;
     }
 }
 
 @media (max-width:800px) {
-    .one{
+    .welcome{
         width: 84%;
         left: 100px;
     }
 }
 
 @media (max-width:770px) {
-    .one{
+    .welcome{
         width: 88%;
         left: 80px;
     }
 }
 
 @media (max-width:740px) {
-    .one{
+    .welcome{
         width: 92%;
         left: 40px;
     }
@@ -176,7 +156,7 @@
         left: 40px;
     }
 
-    .one{
+    .welcome{
         width: 95%;
         left: 10px;
         font-size: 40px;
@@ -195,7 +175,7 @@
    
 }
 
-@media (max-width:620px){
+@media (max-width:625px){
 
     .bg-image h1{
         left: 50px;
@@ -203,8 +183,8 @@
     }
 
     .bg-image h2{
-        left: 0px;
-        font-size: 50px;
+        
+        font-size: 40px;
     }
 
     .bg-image p{
@@ -213,7 +193,7 @@
         width: 80%;
     }
 
-    .one{
+    .welcome{
         width: 95%;
         left: 10px;
     }
@@ -242,7 +222,7 @@
         /* background-color: red; */
     }
 
-    .one{
+    .welcome{
         width: 98%;
         left: 10px;
     }
@@ -254,63 +234,70 @@
         font-size: 40px;
     }
 
-    .one{
+    .welcome{
         width:99%;
         left: 0px;
     }
 }
 
 @media(max-width:450px) {
-    .bg-image h1{
-        left: 0;
-        font-size: 32px;
+     
+
+    .welcome{
+        width:100%;
     }
 
-    .one{
-        width:100%;
+    .bg-image h2{
+        font-size: 30px;
+    }
+
+    .bg-image p{
+        font-size: 23px;
     }
 }
 
 @media (max-width:420px) {
-    .bg-image .tag{
-        position: absolute;
-        top: 540px;
- 
-    }
-
-    .bg-image h2{
-        top: 200px;
-        font-size: 45px;
-    }
-
-    .bg-image h1{
-        font-size: 30px;
-        left: 0;
-    }
-    .one{
-        position: absolute;
-        top: 120px;
-        text-align: center;
+     
+    .welcome{
         width: 100%;
-        
+        font-size: 10px;
     }
     
 }
 
-/* @media (max-width: 390px) {
+@media (max-width: 390px) {
     .bg-image h1{
-        left: 50px;
+        /* left: 50px; */
         font-size: 30px;
     }
 
     .bg-image h2{
         left: 0px;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .bg-image p{
+        font-size: 25px;
         left: 100px;
         top: 400px;
         width: 100%;
     }
-} */
+}
+@media (max-width: 320px) {
+    .bg-image h1{
+        /* left: 50px; */
+        font-size: 30px;
+    }
+
+    .bg-image h2{
+        left: 0px;
+        font-size: 25px;
+    }
+
+    .bg-image p{
+        font-size: 20px;
+        left: 100px;
+        top: 400px;
+        width: 100%;
+    }
+}

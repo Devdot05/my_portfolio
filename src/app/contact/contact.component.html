@@ -7,15 +7,15 @@
             <div class="contact">
                 <div class="d-flex gap-3">
                     <span><i class="fa-solid fa-paper-plane"></i></span>
-                    <p>olawoledotun85&#64;gmail.com</p>
+                    <a href="mailto:olawoledotun85@gmail.com">olawoledotun85&#64;gmail.com</a>
                 </div>
                 <div class="d-flex gap-3">
                     <span><i class="fa-solid fa-square-phone"></i></span>
-                    <p>07044056828</p>
+                    <a href="tel:+2347044056828">07044056828</a>
                 </div>
             </div>
             <div class="message">
-                <a href="https://wa.me/08130649439" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/+2348130649439" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/TimothyOmoOla92 " class="facebook"><span><i class="fa-brands fa-facebook"></i></span></a>
                 <a href="https://www.instagram.com/dott.op" class="instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/YourProfileUsername" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
@@ -37,12 +37,12 @@
                 </div>
                 <div class="my-4">
                     <input type="text" name="" placeholder="Your email" class="shadow-none border border-secondary" formControlName="email">
-                    <span *ngIf="userForm.get('email')?.errors?.['required'] && userForm.get('email')?.touched" class="text-danger">full name is required</span>
+                    <span *ngIf="userForm.get('email')?.errors?.['required'] && userForm.get('email')?.touched" class="text-danger">email name is required</span>
                     <span *ngIf="userForm.get('email')?.errors?.['email'] && userForm.get('email')?.touched" class="text-danger">It must be a valid email</span>
                 </div>
                 <div>
                     <textarea name="" id="" placeholder="Your message" class="shadow-none border border-secondary" formControlName="message"></textarea>
-                    <span *ngIf="userForm.get('message')?.errors?.['required'] && userForm.get('message')?.touched" class="text-danger">full name is required</span>
+                    <span *ngIf="userForm.get('message')?.errors?.['required'] && userForm.get('message')?.touched" class="text-danger">message field is required</span>
                 </div>
                 <div>
                     <button class="btn w-100 mt-3" type="submit">Send</button>
@@ -50,6 +50,12 @@
             </form>
         </div>
     </div>
+    <div class=" text-center mt-4">
+        <a href="#up">
+            <i class="fa-solid fa-chevron-up fs-1"></i>
+        </a>
+    </div>
+    <div id="down"></div>
 </section>
 <div class="text-white copyright py-1 text-center">
     <p class="pt-3">copyright &copy; codithy. My personal website</p>
