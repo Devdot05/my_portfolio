@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center;
     /* position: relative; */
-    padding:100px 0 10px 0px;
+    padding:120px 0 10px 0px;
     
 }
 
@@ -268,12 +268,12 @@
 @media (max-width: 390px) {
     .bg-image h1{
         /* left: 50px; */
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .bg-image h2{
         left: 0px;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .bg-image p{
