@@ -77,6 +77,8 @@ export class ContactComponent {
     feedback_message: this.userForm.value.message
   };
 
+  this.userForm.reset()
+
   emailjs.send('service_jktolhl', 'template_352v14r', templateParams, 'O2YDSU6-TpYLV1ryz')
     .then(response => {
       console.log('SUCCESS!', response, response.text);
